@@ -1,0 +1,14 @@
+# Core Dependencies for YOLO Crack Segmentation
+ultralytics>=8.0.0
+torch
+torchvision
+
+# Numerical and Plotting Utilities
+matplotlib
+opencv-python
+ipython
+pyyaml
+
+# Model Export & Deployment
+onnx>=1.12.0
+onnxruntime>=1.12.0

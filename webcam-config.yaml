@@ -1,0 +1,20 @@
+# Webcam inference config for the trained crack segmentation model.
+# Run from terminal:
+#   cd "D:\All Code\New folder\crack_detect"
+#   yolo cfg=webcam-config.yaml
+# If camera 0 is not detected, change source to 1.
+
+task: segment
+mode: predict
+model: "D:/All Code/New folder/crack_detect/runs/segment/runs/segment/crack_seg_train/weights/best.pt"
+source: 0
+conf: 0.25
+iou: 0.45
+imgsz: 640
+show: true
+save: true
+project: "D:/All Code/New folder/crack_detect/runs/segment/runs/segment"
+name: webcam_predict
+exist_ok: true
+show: true
+verbose: true

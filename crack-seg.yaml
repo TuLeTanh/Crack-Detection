@@ -1,0 +1,11 @@
+# Ultralytics YOLO Crack Segmentation Dataset Configuration
+# Configured for local and portable execution.
+
+path: . # Dataset root directory (relative to where YOLO command is run)
+train: images/train # Train images (relative to 'path')
+val: images/val     # Val images (relative to 'path')
+test: images/test   # Test images (relative to 'path')
+
+# Class mapping (Single-class instance segmentation for Cracks)
+names:
+  0: crack
