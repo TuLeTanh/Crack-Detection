@@ -122,28 +122,4 @@ Below are the final evaluation metrics on the validation dataset:
 
 *The high bounding box mAP@50 (79.92%) and mask mAP@50 (64.85%) demonstrate robust generalization for identifying and localizing surface cracks under varying lighting and texture conditions.*
 
----
 
-## Giới thiệu Dự án (Tiếng Việt)
-
-Dự án này cung cấp một quy trình hoàn chỉnh (end-to-end) để huấn luyện, đánh giá và triển khai mô hình **Phân đoạn thực thể (Instance Segmentation) YOLO11** (`yolo11n-seg`) nhằm tự động nhận diện và quét vết nứt trên các bề mặt bê tông (như cầu đường, tòa nhà, mặt đường).
-
-### Điểm nổi bật:
-- **Độ chính xác cao**: Sử dụng mô hình YOLO11-seg thế hệ mới giúp vẽ đường biên bao quanh vết nứt ở cấp độ pixel.
-- **Thống kê chi tiết**: File notebook nghiên cứu đi kèm có biểu đồ trực quan hóa dữ liệu huấn luyện, so sánh ảnh gốc và ảnh dự đoán mặt nạ nứt.
-- **Tối ưu hóa phần cứng**: Hỗ trợ xuất mô hình sang định dạng **ONNX** nhẹ hơn, chạy mượt mà trên CPU và thiết bị nhúng.
-- **Webcam Real-time**: File `webcam-config.yaml` cho phép mở camera máy tính và quét vết nứt theo thời gian thực ngay lập tức.
-
-### Cách chạy nhanh:
-1. Cài đặt thư viện: `pip install -r requirements.txt`
-2. Mở file notebook và chạy từng ô lệnh để xem trực quan hóa dữ liệu mẫu, biểu đồ huấn luyện và kết quả dự đoán trên tập test.
-3. Chạy thử nghiệm webcam: `yolo cfg=webcam-config.yaml`
-
----
-
-## References & Credits
-- [Ultralytics YOLO11 Documentation](https://docs.ultralytics.com/)
-- Concrete Crack Segmentation Dataset hosted by Ultralytics assets.
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
